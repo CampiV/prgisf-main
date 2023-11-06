@@ -20,13 +20,11 @@ export default function Clientes() {
     Direccion:'',
   });
 
-  const [cart, setCart] = useState([]);
-  const [unitCount, setUnitCount] = useState(0);
 
   const agregarClientes = () => {
     const nuevoCliente = {
       nombre: 'Nuevo Cliente',
-      RUT: '12.345.678.-9',
+      RUT: '12.345.678-9',
       Cod_Cliente: '###',
       Telefono: '+56 912345678',
       Direccion: 'Region, Ciudad, Poblacion, Calle, Numero',
@@ -87,9 +85,7 @@ export default function Clientes() {
                           setEditClients({ ...editClients, nombre: e.target.value })
                         }
                       />
-                    ) : (
-                      client.nombre
-                    )}
+                    ) : (client.nombre)}
                   </td>
                   <td>
                     {editIndex === index ? (
@@ -100,9 +96,7 @@ export default function Clientes() {
                           setEditClients({ ...editClients, RUT: e.target.value })
                         }
                       />
-                    ) : (
-                      client.RUT
-                    )}
+                    ) : ( client.RUT)}
                   </td>
                   <td>
                     {editIndex === index ? (

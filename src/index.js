@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Ajustes from './pages/Ajustes';
 import Perfil from './pages/Perfil';
 import Productos from './pages/Productos';
 import Clientes from './pages/Clientes';
@@ -47,10 +46,6 @@ const router = createBrowserRouter([
     {
       path: "/",
       element: <App/>,
-    },
-    {
-      path: "/ajustes",
-      element: <Ajustes/>,
     },
     {
       path: "/perfil",
