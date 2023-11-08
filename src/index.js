@@ -5,12 +5,10 @@ import App from './App';
 import Perfil from './pages/Perfil';
 import Productos from './pages/Productos';
 import Clientes from './pages/Clientes';
-import Pedidos from './pages/Pedidos';
-import PedidosC from './pages/PedidosC';
 import C_PActivos from './pages/C_PActivos';
 import Ppasados from './pages/Ppasados';
 import CerrarSesion from './pages/CerrarSesion';
-import reportWebVitals from './reportWebVitals';
+
 
 import {
   createBrowserRouter,
@@ -20,6 +18,7 @@ import {
 import Header from './components/Header';
 import Aside from './components/Aside';
 import Footer from './components/Footer';
+
 
 const Layout = () => {
   return (
@@ -58,14 +57,6 @@ const router = createBrowserRouter([
     {
       path: "/clientes",
       element: <Clientes/>,
-    },
-    {
-      path: "/pedidos",
-      element: <Pedidos/>,
-    },
-    {
-      path: "/pedidosc",
-      element: <PedidosC/>,
     },
     {
       path: "/ppasados",
